@@ -10,7 +10,7 @@ const Menu = () => {
             <div className="mt-5 md:mt-16 xl:mt-32 w-40 flex-shrink-0 h-40 rounded-full sm:rounded-md bg-blueGray-400 overflow-y-hidden">
                 <img className="w-full h-40 m-auto" src="/img/avatar.svg" alt="avatar.jpg"/>
             </div>
-            <ul className="text-xs md:text-2xl xl:text-lg text-center w-full mb-2 flex xl:flex-col items-start sm:items-center justify-center xl:h-32 mt-5 ">
+            <ul className="text-xs md:text-2xl xl:text-lg text-center w-full mb-2 flex md:flex-col items-start sm:items-center justify-center xl:h-32 mt-5 ">
                 
                 <NavLink className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
                     activeClassName="border-b-2 bg-gray-700" 
@@ -27,7 +27,7 @@ const Menu = () => {
                     Contacto
                 </button>
             </ul>
-           <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink xl:flex flex-col items-center justify-around flex-grow">
+           <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink md:flex flex-col items-center justify-around flex-grow">
                 <p className="border-b">Formas de contacto</p>
                 <div className="flex w-40 justify-around">
                     <img className="bg-white w-12" src="/img/logo/face.png" alt="face.png"/>

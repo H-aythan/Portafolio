@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
 import db from '../fireBase/fireBase';
 
+const initialForm={
+    nombre:"",
+    correo:"",
+    mensaje:"",
+}
+
 const Modal = ({modal,setModal}) => {
-    const [form,setForm]=useState({});
+    const [form,setForm]=useState(initialForm);
     
     const datosForm=(e)=>{
         setForm({...form,[e.target.name]:e.target.value});
@@ -15,7 +21,7 @@ const Modal = ({modal,setModal}) => {
      
         
     }
-    
+    console.log(form.nombre)
     return (
         <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40" onClick={()=>setModal(!modal)}>
             <div className="md:w-1/2 xl:w-1/3 bg-gray-900 flex flex-wrap " onClick={(e)=>e.stopPropagation()}>
@@ -42,6 +48,7 @@ const Modal = ({modal,setModal}) => {
                                 onChange={(e)=>datosForm(e)}
                                 name="correo"
                             />
+                            
                         </div>
                         <div className="flex flex flex-col max-h-24 sm:max-h-32 text-xs sm:text-lg">
                             <p className="mb-2">Mensaje:</p>
@@ -51,9 +58,9 @@ const Modal = ({modal,setModal}) => {
                             ></textarea>
                         </div>
                         <div className="flex justify-end mt-4">
-                            <button className="bg-gray-800 px-3 py-1 hover:bg-gray-600" onClick={(e)=>envio(e)}>
+                            {(form.nombre!=="")&&(form.correo!=="")&&(form.mensaje!=="")&&<button className="bg-gray-800 px-3 py-1 hover:bg-gray-600" onClick={(e)=>envio(e)}>
                                 Enviar
-                            </button>
+                            </button>}
                         </div>
                     </form>
                    

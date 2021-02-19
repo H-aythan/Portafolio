@@ -48,7 +48,7 @@ const Inicio = () => {
                 </p>
                 
             </div>
-            <div className={`px-10 sm:mt-32 sm:text-2xl xl:text-lg w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
+            <div className={`px-10 sm:mt-32 sm:text-2xl md:text-lg w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
                 <p className="w-60 text-center py-2 ">Soy un desarrollador dedicado 
                     al area web, para ser mas especifico en la especialidad del desarrollo front-end
                 </p>

@@ -65,9 +65,9 @@ const Modal = ({modal,setModal}) => {
                     </form>
                    
                     <div className="flex flex-row flex-wrap sm:flex-nowrap w-full items-center justify-around sm:justify-between flex-grow-0 py-4">
-                        <img className="bg-white w-8 sm:w-12 " src="/img/logo/face.png" alt="face.png"/>
+                        <img className="bg-white w-8 sm:w-12 rounded-lg" src="/img/logo/link.png" alt="linkedin.png"/>
                         <p className="order-3 text-center w-full mt-2 sm:static flex-shrink text-xs sm:text-sm">anthonyromeroromero014@gmail.com</p>
-                        <img className="bg-white sm:order-3 w-8 flex-shrink sm:w-12" src="/img/logo/github.png" alt="Linkedin.jpg"/>
+                        <img className="bg-white sm:order-3 w-8 flex-shrink sm:w-12 rounded-lg" src="/img/logo/github.png" alt="Linkedin.jpg"/>
                     </div>
                 </div>
             </div>

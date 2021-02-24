@@ -14,13 +14,13 @@ const Menu = () => {
                 
                 <NavLink className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
                     activeClassName="border-b-2 bg-gray-700" 
-                    to="/home">
+                    exact to="/">
                         Home
                 </NavLink>
                
                 <NavLink className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
                     activeClassName="border-b-2 bg-gray-700" 
-                    to="/proyectos">
+                    exact to="/proyectos">
                     Proyectos
                 </NavLink>
                 <button className="p-1 sm:w-28 focus:border-b-2 focus:outline-none focus:bg-gray-700 sm:py-1 flex-grow sm:flex-grow-0 cursor-pointer" onClick={()=>setModal(!modal)}> 
@@ -30,8 +30,8 @@ const Menu = () => {
            <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink md:flex flex-col items-center justify-around flex-grow">
                 <p className="border-b">Formas de contacto</p>
                 <div className="flex w-40 justify-around">
-                    <img className="bg-white w-12" src="/img/logo/face.png" alt="face.png"/>
-                    <img className="bg-white w-12" src="/img/logo/github.png" alt="Linkedin.jpg"/>
+                    <img className="bg-white w-12 rounded-lg" src="/img/logo/Link.png" alt="face.png"/>
+                    <img className="bg-white w-12 rounded-lg" src="/img/logo/github.png" alt="Linkedin.jpg"/>
                 </div>
                 <p className="text-green-400">+58 424-9307397</p>
            </div>

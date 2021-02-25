@@ -33,7 +33,7 @@ module.exports = {
       },
       keyframes:{
         'move-t':{
-          'from':{top:'500px'},
+          'from':{top:'700px'},
           'to':{top:'0'},
         },
         'roll':{

@@ -23,8 +23,8 @@ const Modal = ({modal,setModal}) => {
     }
     console.log(form.nombre)
     return (
-        <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40" onClick={()=>setModal(!modal)}>
-            <div className="md:w-1/2 xl:w-1/3 bg-gray-900 flex flex-wrap " onClick={(e)=>e.stopPropagation()}>
+        <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40 " onClick={()=>setModal(!modal)}>
+            <div className="md:w-1/2 xl:w-1/3 bg-gray-900 flex flex-wrap relative animate-move-t" onClick={(e)=>e.stopPropagation()}>
                 <div className="w-full h-10 float-right">
                     <button className="float-right text-xl focus:outline-none mt-2 mr-4"
                         onClick={()=>setModal(!modal)}

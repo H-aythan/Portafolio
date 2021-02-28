@@ -21,7 +21,7 @@ const Modal = ({modal,setModal}) => {
      
         
     }
-    console.log(form.nombre)
+    
     return (
         <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40 " onClick={()=>setModal(!modal)}>
             <div className="md:w-1/2 xl:w-1/3 bg-gray-900 flex flex-wrap relative animate-move-t" onClick={(e)=>e.stopPropagation()}>
@@ -65,9 +65,9 @@ const Modal = ({modal,setModal}) => {
                     </form>
                    
                     <div className="flex flex-row flex-wrap sm:flex-nowrap w-full items-center justify-around sm:justify-between flex-grow-0 py-4">
-                        <img className="bg-white w-8 sm:w-12 rounded-lg" src="/img/logo/link.png" alt="linkedin.png"/>
+                        <a href="https://www.linkedin.com/in/anthony-romero-93a1831b2" target="_blank" rel="noreferrer" ><img className="bg-white w-8 sm:w-12 rounded-lg" src="/img/logo/link.png" alt="linkedin.png"/></a>
                         <p className="order-3 text-center w-full mt-2 sm:static flex-shrink text-xs sm:text-sm">anthonyromeroromero014@gmail.com</p>
-                        <img className="bg-white sm:order-3 w-8 flex-shrink sm:w-12 rounded-lg" src="/img/logo/github.png" alt="Linkedin.jpg"/>
+                        <a href="https://github.com/H-aythan" target="_blank" rel="noreferrer" className="bg-white sm:order-3 w-8 flex-shrink sm:w-12 rounded-lg"><img src="/img/logo/github.png" alt="Linkedin.jpg"/></a>
                     </div>
                 </div>
             </div>

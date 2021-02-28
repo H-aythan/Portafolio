@@ -30,8 +30,8 @@ const Menu = () => {
            <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink md:flex flex-col items-center justify-around flex-grow">
                 <p className="border-b">Formas de contacto</p>
                 <div className="flex w-40 justify-around">
-                    <img className="bg-white w-12 rounded-lg" src="/img/logo/link.png" alt="face.png"/>
-                    <img className="bg-white w-12 rounded-lg" src="/img/logo/github.png" alt="Linkedin.jpg"/>
+                    <a href="https://www.linkedin.com/in/anthony-romero-93a1831b2" target="_blank" rel="noreferrer" ><img className="bg-white w-12 rounded-lg" src="/img/logo/link.png" alt="face.png"/></a>
+                    <a href="https://github.com/H-aythan" target="_blank" rel="noreferrer" ><img className="bg-white w-12 rounded-lg" src="/img/logo/github.png" alt="Linkedin.jpg"/></a>
                 </div>
                 <p className="text-green-400">+58 424-9307397</p>
            </div>

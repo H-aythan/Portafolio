@@ -52,7 +52,7 @@ const Inicio = () => {
                 <p className="w-60 text-center py-2 ">Soy un desarrollador dedicado 
                     al area web, para ser mas especifico en la especialidad del desarrollo front-end
                 </p>
-                <p className="w-60 text-center py-2">Las herramientas que mas gustan para 
+                <p className="w-60 text-center py-2">Las herramientas que mas me gustan para 
                     para desarrollar en el front-end son React Js y tailwindCss
                 </p>
             </div>

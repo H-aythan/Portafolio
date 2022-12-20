@@ -11,6 +11,12 @@ module.exports = {
         'portafolio':"url(/src/img/inicio3.jpg)",
         'proyectos':"url(/src/img/proyectos1.jpg)",
        }),
+      transitionDuration:{
+        '2000': '2000ms',
+      },
+      transitionProperty: {
+        'height': 'height'
+      },
       colors: {
         
         transparent: 'transparent',
@@ -88,6 +94,9 @@ module.exports = {
       padding: ['hover'],
       borderWidth:['hover','focus'],
       display:['hover'],
+      height:['hover','focus','responsive'],
+      maxHeight:['hover'],
+      minHeight:['hover'],
     },
   },
   plugins: [],

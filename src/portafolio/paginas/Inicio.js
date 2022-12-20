@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import Particles from './inicioComponents/Particles';
 
-const Inicio = () => {
+const Inicio = ({refInicio}) => {
     const[animation,setAnimation]=useState(false);
     const[animation2,setAnimation2]=useState(false)
     const[animation3,setAnimation3]=useState(false)
@@ -27,14 +28,16 @@ const Inicio = () => {
     },[mounted])
     
     return (
-        <div className="relative w-full h-full sm:animate-move-t flex-grow 
-            flex xl:flex-col flex-wrap justify-center xl:justify-start md:bg-portafolio bg-cover bg-center
-            bg-gradient-to-b from-blueGray-900 to-blueGray-800"
+        <div className="relative w-full h-screen flex-grow overflow-hidden
+            flex xl:flex-col flex-wrap justify-center xl:justify-start md:bg-portafoli bg-cover bg-center
+            bg-gradient-to-b from-blueGray-700 to-blueGray-900"
+            ref={refInicio}
         >
             <title>Home</title>
+            <Particles colorFrame={"lightBlue"} colorIntensity={"400"}/>
             <div className="pt-2 h-24 xl:mt-32 ">
                 
-                <h1 className="text-2xl sm:text-4xl md:text-5xl flex justify-center w-full"> 
+                <h1 className="text-2xl sm:text-4xl md:text-5xl flex justify-center w-full "> 
                     <p className={`p-2 border-b-4 ${!animation&&"invisible"} 
                         ${animation&&"relative animate-move-text-l visible"}`}>
                         Anthony Romero

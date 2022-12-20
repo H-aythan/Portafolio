@@ -3,7 +3,7 @@ import AppRouter from './AppRouter'
 
 const Portafolio = () => {
     return (
-        <div className="flex-col overflow-x-hidden sm:overflow-hidden md:flex-row bg-coolGray-900 h-screen text-white flex w-full ">
+        <div className="md:flex-row bg-coolGray-900 h-screen text-white flex w-full flex-col">
              <AppRouter/>    
         </div>
     )

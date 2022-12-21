@@ -28,14 +28,14 @@ const Inicio = ({refInicio}) => {
     },[mounted])
     
     return (
-        <div className="relative w-full h-screen flex-grow overflow-hidden
-            flex xl:flex-col flex-wrap justify-center xl:justify-start md:bg-portafoli bg-cover bg-center
+        <div className="relative w-full h-screen flex-grow overflow-hidden 
+            flex xl:flex-col flex-wrap justify-center xl:justify-start 
             bg-gradient-to-b from-blueGray-700 to-blueGray-900"
             ref={refInicio}
         >
             <title>Home</title>
             <Particles colorFrame={"lightBlue"} colorIntensity={"400"}/>
-            <div className="pt-2 h-24 xl:mt-32 ">
+            <div className="pt-2 h-24 mt-28">
                 
                 <h1 className="text-2xl sm:text-4xl md:text-5xl flex justify-center w-full "> 
                     <p className={`p-2 border-b-4 ${!animation&&"invisible"} 
@@ -51,7 +51,7 @@ const Inicio = ({refInicio}) => {
                 </p>
                 
             </div>
-            <div className={`px-10 sm:mt-32 sm:text-2xl md:text-lg w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
+            <div className={`px-10 mb-32 md:mb-0 sm:mt-32 sm:text-2xl md:text-lg w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
                 <p className="w-60 text-center py-2 ">Soy un desarrollador dedicado 
                     al area web, para ser mas especifico en la especialidad del desarrollo front-end
                 </p>

@@ -9,7 +9,7 @@ const Proyectos = ({refProyecto}) => {
             <Particles colorFrame={"red"} colorIntensity={"300"}/>
             <title>Proyectos</title>
             
-            <div className="flex justify-center item-center p-20 h-full" >
+            <div className="flex justify-center item-center px-2 pt-12 md:p-20 h-full" >
                 <Slider slideRef={slideRef}/>
             </div>
         </div>

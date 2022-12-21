@@ -50,7 +50,7 @@ const SliderProyectos = ({slideRef}) => {
                             onMouseLeave={()=>setId(null)}
                         >
                             <div className='w-full mb-5 cursor-pointer h-full'>    
-                                <img className='w-full object-cover ' alt='' src={item.img}/>
+                                <img className={`w-full object-cover ${item.img&&"h-40"}`} alt='' src={item.img}/>
                             </div>
                                 <span className='w-full h-min text-black text-xl md:text-2xl  flex justify-center '>
                                     <h1 className='w-min break-words overflow-hidden'>{item?.titulo}</h1>
